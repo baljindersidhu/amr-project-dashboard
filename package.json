@@ -13,7 +13,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "rd /s /q docs",
     "build": "react-scripts build",
+    "postbuild": "rename build docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
